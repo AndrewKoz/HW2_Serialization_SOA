@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package serialisationLab;
+
+message Message {
+  required string string = 1;
+  repeated int32 list = 2;
+  map<string, string > dict = 3;
+  required int32 int = 4;
+  required float float = 5;
+}

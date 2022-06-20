@@ -1,0 +1,34 @@
+{
+  "name": "Message",
+  "type": "record",
+  "fields": [
+    {
+      "name": "string",
+      "type": "string"
+    },
+    {
+      "name": "list",
+      "type": {
+        "type": "array",
+        "items": "int",
+        "default": []
+      }
+    },
+    {
+      "name": "dict",
+      "type": {
+        "type": "map",
+        "values" : "string",
+        "default": {}
+        }
+    },
+    {
+      "name": "int",
+      "type": "int"
+    },
+    {
+      "name": "float",
+      "type": "float"
+    }
+  ]
+}
